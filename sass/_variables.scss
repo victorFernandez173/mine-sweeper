@@ -1,0 +1,23 @@
+/// Mapa con las variables de colores
+/// @access public
+/// @author Victor Fernandez
+/// @type map
+$mapa_colores: ("azul1" : #d6e8ee, "azul2" : #97cadb, "azul3" : #018abe, "azul4" : #02457a, "azul5" : #001b48, "testeo" : yellow, "unaBom": blue, "dosBom" : green, "tresBom" : red, "auto" : black);
+
+
+/// Lista con colores claritos al azar en elementos
+/// @access public
+/// @author Victor Fernandez
+/// @type list
+$lista_colores: (
+	yellow, orange, green, red, silver, coral
+);
+
+/// Lista con prefijos para aplicar contenidos con un for
+/// @access public
+/// @author Victor Fernandez
+/// @type list
+$lista_prefijos: (
+	"una", "dos", "tres"
+);
+

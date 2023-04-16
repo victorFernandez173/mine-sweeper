@@ -1,0 +1,229 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "Mochiy Pop P One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fuentes/mochiy-pop-p-one-v7-latin-regular.eot");
+  src: local(""), url("../fuentes/mochiy-pop-p-one-v7-latin-regular.woff2") format("woff2"), url("../fuentes/mochiy-pop-p-one-v7-latin-regular.woff") format("woff"), url("../fuentes/mochiy-pop-p-one-v7-latin-regular.ttf") format("truetype");
+}
+body {
+  margin: auto;
+  background-color: #d6e8ee;
+  width: 1200px;
+  text-align: center;
+}
+
+header > h1 {
+  position: relative;
+  font-family: "Mochiy Pop P One";
+  padding-top: 50px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  display: block;
+  font-size: 100px;
+  text-align: center;
+  margin: auto;
+  width: 1200px;
+}
+
+#idLogo {
+  position: absolute;
+  height: 200px;
+  left: -50px;
+}
+
+nav {
+  margin: auto;
+  height: 100px;
+  background-color: #97cadb;
+  text-align: center;
+  width: 1200px;
+  border-radius: 20px;
+}
+nav ul {
+  margin: auto;
+  height: 100%;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 30px;
+  height: 100%;
+  width: 18%;
+  border-radius: 20px;
+}
+nav ul li:hover {
+  background-color: #018abe;
+}
+nav ul li:active {
+  background-color: #001b26;
+}
+nav ul li a {
+  padding-top: 30px;
+  height: 90%;
+  width: 100%;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 3vh;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  margin-bottom: 500px;
+}
+
+#idDivDificultad {
+  margin-top: 1vh;
+  margin-right: 0vh;
+  margin-bottom: 2vh;
+  margin-left: 0vh;
+  font-size: 1.2rem;
+}
+#idDivDificultad select {
+  font-size: 1.1rem;
+  border-radius: 15px;
+  padding: 5px;
+}
+#idDivDificultad button {
+  border-radius: 15px;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+#idRecargar {
+  position: relative;
+  bottom: 20px;
+  background-color: green;
+  border-radius: 15px;
+}
+#idRecargar:active {
+  background-color: coral;
+}
+
+div[class^=info] img {
+  width: 50px;
+}
+
+main section {
+  display: inline-block;
+}
+
+#idSec1 {
+  width: 100%;
+  margin-bottom: 1vh;
+}
+#idSec1 div {
+  width: 12%;
+  display: inline-block;
+}
+
+#idSec2 {
+  width: 100%;
+}
+
+#idTabla {
+  margin: auto;
+}
+#idTabla td {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-style: ridge;
+  border-color: #001b48;
+  box-shadow: 3px 3px 5px #97cadb;
+}
+#idTabla td img {
+  width: 30px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+}
+
+#idRecargar {
+  padding-top: 3px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+}
+#idRecargar img {
+  width: 40px;
+}
+
+.blue {
+  background-color: #001b48;
+}
+
+.minada {
+  background-color: red;
+  background-image: url("../img/bomba.png");
+  background-size: cover;
+}
+
+.destapada {
+  background-color: #97cadb;
+}
+
+.unaBom {
+  color: blue;
+}
+
+.dosBom {
+  color: green;
+}
+
+.tresBom {
+  color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.banderilla {
+  background-color: #018abe;
+  background-size: 40px;
+  background-image: url("../img/banderita.png");
+}
+
+footer {
+  width: 1200px;
+  margin: auto;
+  height: 100px;
+  margin-top: 20px;
+  background-color: #97cadb;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  position: fixed;
+  bottom: 0px;
+  column-count: 4;
+}
+footer div {
+  padding-top: 30px;
+}
+footer div a {
+  text-decoration: none;
+  color: #001b48;
+  font-size: 1.7em;
+}
+footer div a:hover {
+  color: #018abe;
+}
+footer div:last-child {
+  margin-right: 10px;
+}
+footer div:nth-child(2) img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=buscaminas_estilos.css.map */

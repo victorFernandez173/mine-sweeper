@@ -1,0 +1,40 @@
+@import '_variables.scss';
+
+footer {
+    width: 1200px;
+    margin: auto;
+    height: 100px;
+    margin-top: 20px;
+    background-color: map-get($mapa-colores, "azul2");
+    border-radius: 20px;
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 0px;
+    column-count: 4;
+
+    div{
+        padding-top: 30px;
+
+        a{
+            text-decoration: none;
+            color: map-get($mapa-colores, "azul5");
+            font-size: 1.7em;
+
+            &:hover{
+                color: map-get($mapa-colores, "azul3");
+            }
+        }
+        
+    }
+
+    div:last-child{
+        margin-right: 10px;
+    }
+
+    div:nth-child(2){
+        img{
+            width: 40px;
+            margin-left: 10px;
+        }
+    }
+}

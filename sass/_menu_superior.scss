@@ -1,0 +1,58 @@
+@import '_variables.scss', '_funciones.scss', '_mixins.scss';
+
+header > h1 {
+    position: relative;
+    font-family: 'Mochiy Pop P One';
+    @include rellenos(50, 0, 20, 50);
+    display: block;
+    font-size: 100px;
+    text-align: center;
+    margin: auto;
+    width: 1200px;
+}
+
+#idLogo {
+    position: absolute;
+    height: 200px;
+    left: -50px;
+}
+
+nav {
+    margin: auto;
+    height: 100px;
+    background-color: map-get($mapa-colores, "azul2");
+    text-align: center;
+    width: 1200px;
+    border-radius: 20px;
+
+    ul {
+        margin: auto;
+        height: 100%;
+        
+        li {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 30px;
+            height: 100%;
+            width: 18%;
+            border-radius: 20px;
+
+            &:hover {
+                background-color: map-get($mapa-colores, "azul3");
+            }
+
+            &:active {
+                background-color: oscurecer(map-get($mapa-colores, "azul3"));
+            }
+
+            a{
+                padding-top: 30px;
+                height: 90%;
+                width: 100%;
+                display: block;
+                color: map-get($mapa-colores, "auto");
+                text-decoration: none;
+            }
+        }
+    }
+}

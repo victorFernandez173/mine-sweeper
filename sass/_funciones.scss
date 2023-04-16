@@ -1,0 +1,37 @@
+@import '_variables.scss';
+
+/// funcion para oscurecer un color, se le pasa un color y lo devuelve con un tono más oscuro en función del porcentaje
+/// @access public
+/// @author Victor Fernandez
+/// @param {String} $color - Color a oscurecer
+/// @return {color} color modificado
+@function oscurecer($color){
+	@return darken($color, 30%);
+}
+
+/// funcion para aclarar un color, se le pasa un color y lo devuelve con un tono más claro en función del porcentaje
+/// @access public
+/// @author Victor Fernandez
+/// @param {String} $color - Color a aclarar
+/// @return {color} color modificado
+@function aclarar($color){
+	@return lighten($color, 30%);
+}
+
+/// funcion para calcular tamaño de celda en función de la anchura del contenedor (no aplicada)
+/// @access public
+/// @author Victor Fernandez
+/// @param {String} $anchuraCont - anchura del contenedor del tablero 
+/// @param {Integer} $numElem - numero total de celdas
+/// @return {String} tamaño de cada celda
+@function calcularTam($anchuraCont, $numElem){
+	@return #{$anchuraCont}/$numElem;
+}
+
+/// funcion para obtener un color al azar de la lista de colores, solo se aplica al compilar sass
+/// @access public
+/// @author Victor Fernandez
+/// @return {String} color elegido al azar de la lista de colores
+@function colorAlAzar(){
+	@return nth($lista_colores, random(length($lista-colores)));
+}

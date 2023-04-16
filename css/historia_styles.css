@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "Mochiy Pop P One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fuentes/mochiy-pop-p-one-v7-latin-regular.eot");
+  src: local(""), url("../fuentes/mochiy-pop-p-one-v7-latin-regular.woff2") format("woff2"), url("../fuentes/mochiy-pop-p-one-v7-latin-regular.woff") format("woff"), url("../fuentes/mochiy-pop-p-one-v7-latin-regular.ttf") format("truetype");
+}
+body {
+  margin: auto;
+  background-color: #d6e8ee;
+  width: 1200px;
+  text-align: center;
+}
+
+header > h1 {
+  position: relative;
+  font-family: "Mochiy Pop P One";
+  padding-top: 50px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  display: block;
+  font-size: 100px;
+  text-align: center;
+  margin: auto;
+  width: 1200px;
+}
+
+#idLogo {
+  position: absolute;
+  height: 200px;
+  left: -50px;
+}
+
+nav {
+  margin: auto;
+  height: 100px;
+  background-color: #97cadb;
+  text-align: center;
+  width: 1200px;
+  border-radius: 20px;
+}
+nav ul {
+  margin: auto;
+  height: 100%;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 30px;
+  height: 100%;
+  width: 18%;
+  border-radius: 20px;
+}
+nav ul li:hover {
+  background-color: #018abe;
+}
+nav ul li:active {
+  background-color: #001b26;
+}
+nav ul li a {
+  padding-top: 30px;
+  height: 90%;
+  width: 100%;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  width: 1200px;
+  margin: auto;
+  height: 100px;
+  margin-top: 20px;
+  background-color: #97cadb;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  position: fixed;
+  bottom: 0px;
+  column-count: 4;
+}
+footer div {
+  padding-top: 30px;
+}
+footer div a {
+  text-decoration: none;
+  color: #001b48;
+  font-size: 1.7em;
+}
+footer div a:hover {
+  color: #018abe;
+}
+footer div:last-child {
+  margin-right: 10px;
+}
+footer div:nth-child(2) img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=historia_styles.css.map */

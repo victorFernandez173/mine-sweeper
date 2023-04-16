@@ -1,0 +1,40 @@
+/// Mixin para poner margenes y rellenos al gusto o a 0 por defecto
+/// @access public
+/// @author Victor Fernandez
+/// @param {string} $margen [0px] - Tamaño de los margenes
+/// @param {string} $relleno [0px] - Tamaño de los rellenos
+@mixin desdeCero($margen: 0px, $relleno: 0px){
+    margin : $margen;
+    padding : $relleno;
+}
+
+
+/// Mixin para poner margenes especificos con uso de interpolacion
+/// @access public
+/// @author Victor Fernandez
+/// @param {integer} $arr [0] - Tamaño margen superior
+/// @param {integer} $der [0] - Tamaño margen derecho
+/// @param {integer} $aba [0] - Tamaño margen inferior
+/// @param {integer} $izq [0] - Tamaño margen izquierdo
+/// @param {string} $ud ["px"] - Unidad del margen
+@mixin margenes($arr: 0, $der: 0, $aba: 0, $izq: 0, $ud: "px"){
+    margin-top: #{$arr}#{$ud};
+    margin-right: #{$der}#{$ud};
+    margin-bottom: #{$aba}#{$ud};
+    margin-left: #{$izq}#{$ud};
+}
+
+/// Mixin para poner rellenos especificos con uso de interpolacion
+/// @access public
+/// @author Victor Fernandez
+/// @param {integer} $arr [0] - Tamaño relleno superior
+/// @param {integer} $der [0] - Tamaño relleno derecho
+/// @param {integer} $aba [0] - Tamaño relleno inferior
+/// @param {integer} $izq [0] - Tamaño relleno izquierdo
+/// @param {string} $ud ["px"] - Unidad del relleno
+@mixin rellenos($arr: 0, $der: 0, $aba: 0, $izq: 0, $ud: "px"){
+    padding-top: #{$arr}#{$ud};
+    padding-right: #{$der}#{$ud};
+    padding-bottom: #{$aba}#{$ud};
+    padding-left: #{$izq}#{$ud};
+}

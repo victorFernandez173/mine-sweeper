@@ -1,0 +1,24 @@
+@import '_variables.scss', '_mixins.scss';
+
+* {
+    @include desdeCero;
+}
+
+@font-face {
+    font-family: 'Mochiy Pop P One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fuentes/mochiy-pop-p-one-v7-latin-regular.eot');
+    src: local(''),
+        url('../fuentes/mochiy-pop-p-one-v7-latin-regular.woff2') format('woff2'),
+        url('../fuentes/mochiy-pop-p-one-v7-latin-regular.woff') format('woff'),
+        url('../fuentes/mochiy-pop-p-one-v7-latin-regular.ttf') format('truetype');
+}
+
+body {
+    margin: auto;
+    background-color: map-get($mapa-colores, "azul1");
+    width: 1200px;
+    text-align: center;
+}
+

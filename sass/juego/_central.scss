@@ -1,0 +1,130 @@
+@import '../_variables.scss', '../_mixins', '../_funciones.scss';
+
+main{
+    padding-top: 3vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: 500px;
+}
+
+// div con el formulario para la dificultad
+#idDivDificultad{
+    @include margenes(1, 0, 2, 0, 'vh');
+    font-size: 1.2rem;
+    
+    select{
+        font-size: 1.1rem;
+        border-radius: 15px;
+        padding: 5px;
+    }
+
+    button{
+        border-radius: 15px;
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+}
+
+#idRecargar{
+    position: relative;
+    bottom: 20px;
+    background-color: colorAlAzar();
+    border-radius: 15px;
+
+    &:active{
+        background-color: colorAlAzar();
+    }
+}
+
+div[class^="info"]{
+    img{
+        width: 50px;
+    }
+}
+
+main section{
+    display: inline-block;
+}
+
+#idSec1{
+    width: 100%;
+    margin-bottom: 1vh;
+
+    div{
+        width: 12%;
+        display: inline-block;
+    }
+}
+
+#idSec2{
+    width: 100%;
+}
+
+#idTabla{
+    margin: auto;
+
+    td{
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border-style: ridge;
+        border-color: map-get($mapa-colores, "azul5");
+        box-shadow: 3px 3px 5px map-get($mapa-colores, "azul2");
+
+        img {
+            width: 30px;
+            @include rellenos(5, 5, 0, 5);
+        }
+    }
+}
+
+#idRecargar{
+    @include rellenos(3, 5, 0, 5);
+
+    img {
+        width: 40px;
+    }
+}
+
+// clases de diferentes casillas
+.blue{
+    background-color: map-get($mapa-colores, "azul5");
+}
+
+.minada{
+    background-color: map-get($mapa-colores, "tresBom");
+    background-image: url("../img/bomba.png");
+    background-size: cover;
+}
+
+.destapada{
+    background-color: map-get($mapa-colores, "azul2");
+}
+
+/// for  con interporlacion e if-else para crear las reglas que asignan color de letra a las casillas del tablero
+/// @access public
+/// @author Victor Fernandez
+/// @group estructurasDeControl
+@for $i from 1 to 4{
+    .#{nth($lista-prefijos, $i)}#{"Bom"}{
+        @if $i > 2{
+            color: map-get($mapa-colores, #{nth($lista-prefijos, $i)}#{"Bom"});
+        } @else if $i % 2 == 0{
+            color: map-get($mapa-colores, #{nth($lista-prefijos, $i)}#{"Bom"});
+        } @else {
+            color: map-get($mapa-colores, #{nth($lista-prefijos, $i)}#{"Bom"});
+        }
+    }
+}
+
+.yellow{
+    background-color: map-get($mapa-colores, "testeo");
+}
+
+.banderilla{
+    background-color: map-get($mapa-colores, "azul3");
+    background-size: 40px;
+    background-image: url("../img/banderita.png");
+}
